@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchPath"
+    android:label="@string/app_name">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:lineSpacingExtra="2sp"
+            android:text="원하시는 노선을 선택해주세요"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="노선번호를 입력하세요"
+            android:lineSpacingExtra="2sp"
+            android:textColor="#000000"
+            android:textSize="17sp">
+
+        </SearchView>
+
+
+        <!--<EditText-->
+            <!--android:id="@+id/editSearch"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="검색어를 입력하세요."/>-->
+
+        <!--<ListView-->
+            <!--android:id="@+id/listView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:divider="#999999"-->
+            <!--android:dividerHeight="1dp">-->
+        <!--</ListView>//검색바 리스트뷰 구현-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_search"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_below="@+id/searchView1"-->
+                <!--android:text="@string/search" />-->
+
+            <TextView
+                android:id="@+id/recmndpathtxt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:lineSpacingExtra="2sp"
+                android:text="추천노선"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/seeMore" android:layout_marginTop="10dp" android:text="더보기+" android:textSize="15sp" android:textColor="#009dff" android:lineSpacingExtra="33sp" android:visibility="visible" android:background="#fffafa" android:layout_marginRight="10dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/place_background">
+        </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="top">
+
+                <ImageButton
+                    android:id="@+id/rcmnd_nature"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/icon4" />
+
+                <TextView
+                    android:id="@+id/rcmnd_naturetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="2sp"
+                    android:gravity="center_horizontal"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="자연적 노선" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/rcmnd_night"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/icon1" />
+
+                <TextView
+                    android:id="@+id/rcmnd_nighttxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="2sp"
+                    android:gravity="center_horizontal"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="야경 노선" />
+            </LinearLayout>
+
+            <!--android:scaleType="fitCenter”-->
+            <!--setScaleType(ImageView.ScaleType.FIT_CENTER);-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/rcmnd_culture"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/icon3" />
+
+                <TextView
+                    android:id="@+id/rcmnd_culturetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="0"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="2sp"
+                    android:gravity="center_horizontal"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="유적지 노선" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/rcmnd_downtown"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:padding="0dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/icon2" />
+
+                <TextView
+                    android:id="@+id/rcmnd_downtowntxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="2sp"
+                    android:gravity="center_horizontal"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="번화가 노선" />
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.ContentFrameLayout>
+
+
+</LinearLayout>

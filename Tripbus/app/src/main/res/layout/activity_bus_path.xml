@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<android.support.constraint.ConstraintLayout tools:context=".bus662" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scroll">
+
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical">
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <ImageButton android:background="@android:color/transparent" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/back" android:src="@drawable/left" android:layout_marginTop="30dp" android:layout_marginLeft="20dp"/>
+
+    <ImageButton android:background="@android:color/transparent" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/scrap" android:src="@drawable/heart2" android:layout_marginTop="30dp"
+        android:layout_marginLeft="270dp" android:layout_weight="1"/>
+
+</LinearLayout>
+    <ImageView android:layout_height="105dp" android:layout_width="165dp" android:id="@+id/bus" app:srcCompat="@drawable/bus_2" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:contentDescription="TODO" android:layout_marginTop="10dp" android:layout_marginLeft="97.5dp"/>
+
+        <TextView
+            android:id="@+id/bus_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="3sp"
+            android:text="662번 버스"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/rcmnd_place" android:layout_marginTop="20dp" android:layout_marginLeft="32dp" android:text="이 노선의 추천장소" android:textSize="15sp" android:textColor="#000000" android:lineSpacingExtra="2sp" android:layout_weight="0" android:visibility="visible"/>
+
+
+    -<LinearLayout android:layout_height="40dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+    <ImageButton android:layout_height="23.5dp" android:layout_width="23.5dp" android:id="@+id/gps" app:srcCompat="@drawable/gps" android:layout_marginTop="10dp" android:layout_marginLeft="32dp" android:layout_weight="0"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/seeinmap" android:layout_marginTop="10dp" android:text="지도로 보기" android:textSize="14sp" android:textColor="#000000" android:lineSpacingExtra="18sp" android:layout_weight="1" android:visibility="visible"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/seeMore" android:layout_marginTop="10dp" android:text="더보기+" android:textSize="15sp" android:textColor="#009dff" android:lineSpacingExtra="33sp" android:visibility="visible" android:background="#fffafa" android:layout_marginRight="10dp"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:layout_weight="0" android:background="@drawable/place_background">
+
+    <!--tools:layout_editor_absoluteY="577dp"-->
+
+
+    -
+
+    <ListView
+        android:id="@+id/path24"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="90dp"
+        android:dividerHeight="150dp"/>
+
+    <ImageView android:layout_height="499dp" android:layout_width="match_parent" android:id="@+id/step12345" app:srcCompat="@drawable/detail_page" android:layout_marginTop="0dp" android:layout_weight="1" android:layout_gravity="center"/>
+
+    <ListView
+        android:id="@+id/path135"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:dividerHeight="150dp"/>
+
+
+    -
+
+</LinearLayout>
+
+    <android.support.v7.widget.ContentFrameLayout android:layout_height="match_parent" android:layout_width="match_parent"> </android.support.v7.widget.ContentFrameLayout>
+
+</LinearLayout>
+
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>

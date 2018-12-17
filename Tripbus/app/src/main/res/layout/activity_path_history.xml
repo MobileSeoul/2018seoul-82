@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PathCulture">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="1019dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="142dp"
+            android:layout_height="128dp"
+            android:layout_marginLeft="109dp"
+            android:layout_marginRight="109dp"
+            android:layout_marginTop="91dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/icon3" />
+
+        <TextView
+            android:id="@+id/path_culture"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="137dp"
+            android:layout_marginRight="137dp"
+            android:gravity="center_horizontal"
+            android:text="유적지 노선"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="3sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="270dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="2sp"
+            tools:text="추천 노선"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/path105"
+                        android:layout_width="86dp"
+                        android:layout_height="39dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_weight="0"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/path105" />
+
+
+                    <ImageButton
+                        android:id="@+id/path7019"
+                        android:layout_width="86dp"
+                        android:layout_height="39dp"
+                        android:layout_weight="0"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/path7019" />
+
+                    <ImageButton
+                        android:id="@+id/path7022"
+                        android:layout_width="86dp"
+                        android:layout_height="39dp"
+                        android:layout_weight="0"
+                        android:layout_marginRight="55dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/path7022" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/pathn601"
+                        android:layout_width="86dp"
+                        android:layout_height="39dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_weight="0"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/path601" />
+
+                    <ImageButton
+                        android:id="@+id/path1020"
+                        android:layout_width="86dp"
+                        android:layout_height="39dp"
+                        android:layout_weight="0"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/path1020" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

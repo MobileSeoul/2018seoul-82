@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="640dp"
+    android:minWidth="360dp"
+    android:visibility="visible"
+    tools:context=".Intro"
+    tools:layout_editor_absoluteY="25dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/place_background"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bus_intro"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/bus_2"
+            app:layout_constraintBottom_toTopOf="@+id/tripbustext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bus_intro" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tripbustext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="12sp"
+                android:text="Tripbus"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#009dff"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="305dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="400dp">
+
+        <ImageView
+            android:id="@+id/IntroPalace"
+            android:layout_width="match_parent"
+            android:layout_height="177.2dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="440dp"
+            android:baselineAlignBottom="true"
+            android:src="@drawable/icon3"
+            app:srcCompat="@drawable/icon3"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="437dp" />
+
+        <ImageView
+            android:id="@+id/IntroForest"
+            android:layout_width="match_parent"
+            android:layout_height="106.9dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="400dp"
+            android:baselineAlignBottom="true"
+            android:src="@drawable/icon4"
+            app:srcCompat="@drawable/icon4"
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="455dp" />
+
+        <ImageView
+            android:id="@+id/IntroTower"
+            android:layout_width="match_parent"
+            android:layout_height="134.7dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="450dp"
+            android:src="@drawable/icon1"
+            app:srcCompat="@drawable/icon1"
+            tools:layout_editor_absoluteX="229dp"
+            tools:layout_editor_absoluteY="427dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

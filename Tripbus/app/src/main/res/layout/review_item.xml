@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="2sp"
+        android:text="id_sample"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/userRating"
+        style="@style/starRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="3dp"
+        android:numStars="5"
+        android:rating="4"
+        android:scaleX="0.7"
+        android:scaleY="0.7" />
+
+    <TextView
+        android:id="@+id/userText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="3dp"
+        android:lineSpacingExtra="5sp"
+        android:text="생각보다 넓고 좋아요! 주말에는 사람들이 많아서 평일에 가는 걸 추천합니다"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+</LinearLayout>

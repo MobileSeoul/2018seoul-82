@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<LinearLayout android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton android:layout_height="81dp" android:layout_width="84dp" android:id="@+id/rcmnd_placeimg" app:srcCompat="@drawable/icon4"
+        android:layout_marginLeft="35dp" android:scaleType="centerCrop"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/rcmnd_placetxt"  android:text="시민의숲" android:textSize="14sp" android:textColor="#000000" android:lineSpacingExtra="3sp" android:gravity="center_horizontal"/>
+
+
+</LinearLayout>

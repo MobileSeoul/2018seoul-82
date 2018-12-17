@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".more_buspathitem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/numbuspath"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="0sp"
+            android:textColor="#009dff"
+            android:textSize="32sp"
+            tools:text="272번" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="167dp"
+            android:textSize="26sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="10sp"
+            tools:text="청량리.청과물도매시장 [06022]-
+창경궁.서울대학교병원 [01002] -
+창덕궁.서울돈화문국악당 [01172] -
+사직단 [01113] - 경복궁 [01117] "
+            />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+        <android.support.v7.widget.ContentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/placeImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/image_sample" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation ="horizontal">
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/back" />
+
+                <ImageButton
+                    android:id="@+id/scrap"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="290dp"
+                    android:scaleType="centerCrop"
+                    android:src ="@drawable/emptyheart"
+                    android:background="@android:color/transparent"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/place_background">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="185dp"
+            android:layout_marginLeft="40dp">
+
+            <TextView
+                android:id="@+id/placeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="2sp"
+                android:text="창덕궁"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/placeEName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="5sp"
+                android:text="Lotte Tower"
+                />
+
+            <TextView
+                android:id="@+id/placeAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="24sp"
+                android:text="서울 종로구 율곡로 99"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/placeIcon"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="35dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/placeicon_sample" />
+    </android.support.v7.widget.ContentFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textSize="17sp"
+        android:textColor="#009dff"
+        android:lineSpacingExtra="22sp"
+        android:text="리뷰 Review"
+        />
+
+        <Button
+            android:id="@+id/reviewMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:background="@color/white"
+            android:lineSpacingExtra="33sp"
+            android:text="더보기+"
+            android:textColor="#009dff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/reviewList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

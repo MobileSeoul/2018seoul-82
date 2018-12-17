@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <android.support.constraint.ConstraintLayout tools:context=".bus662" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    -<ScrollView android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scroll">
+
+
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical">
+
+    <ImageView android:layout_height="105dp" android:layout_width="165dp" android:id="@+id/bus" app:srcCompat="@drawable/bus_2" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:contentDescription="TODO" android:layout_marginTop="101.5dp" android:layout_marginLeft="97.5dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/bus662txt" android:text="662번 버스" android:textSize="18sp" android:textColor="#000000" android:lineSpacingExtra="3sp" android:gravity="center_horizontal" android:layout_weight="0" android:layout_gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/rcmnd_place" android:layout_marginTop="20dp" android:layout_marginLeft="32dp" android:text="이 노선의 추천장소" android:textSize="15sp" android:textColor="#000000" android:lineSpacingExtra="2sp" android:layout_weight="0" android:visibility="visible"/>
+
+
+    -<LinearLayout android:layout_height="40dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+    <ImageButton android:layout_height="23.5dp" android:layout_width="23.5dp" android:id="@+id/gps" app:srcCompat="@drawable/gps" android:layout_marginTop="10dp" android:layout_marginLeft="32dp" android:layout_weight="0"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/seeinmap" android:layout_marginTop="10dp" android:text="지도로 보기" android:textSize="14sp" android:textColor="#000000" android:lineSpacingExtra="18sp" android:layout_weight="1" android:visibility="visible"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/reviewMore" android:layout_marginTop="10dp" android:text="더보기+" android:textSize="15sp" android:textColor="#009dff" android:lineSpacingExtra="33sp" android:visibility="visible" android:background="#fffafa" android:layout_marginRight="5dp"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:layout_weight="0" android:background="@drawable/place_background">
+
+    <!--tools:layout_editor_absoluteY="577dp"-->
+
+
+
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="400dp" android:orientation="vertical" android:layout_weight="1">
+
+    <ImageButton android:layout_height="81dp" android:layout_width="84dp" android:id="@+id/theforestofcitizens" app:srcCompat="@drawable/icon4" android:layout_marginTop="109dp" android:layout_marginLeft="50.5dp" android:scaleType="centerCrop"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/theforestofcitizenstxt" android:layout_marginLeft="50.5dp" android:text="시민의숲 The Forest of Citizens" android:textSize="14sp" android:textColor="#000000" android:lineSpacingExtra="3sp" android:gravity="center_horizontal"/>
+
+    <ImageButton android:layout_height="81dp" android:layout_width="84dp" android:id="@+id/CheonggyesanandOneTurgol" app:srcCompat="@drawable/icon4" android:layout_marginTop="91.5dp" android:layout_marginLeft="51.5dp" android:scaleType="centerCrop"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/CheonggyesanandOneTurgoltxt" android:layout_marginLeft="50.5dp" android:text="청계산.원터골 Cheonggyesan and One-Turgol" android:textSize="14sp" android:textColor="#000000" android:lineSpacingExtra="3sp" android:gravity="center_horizontal"/>
+
+</LinearLayout>
+
+    <ImageView android:layout_height="499dp" android:layout_width="match_parent" android:id="@+id/step12345" app:srcCompat="@drawable/detail_page" android:layout_marginTop="0dp" android:layout_weight="1" android:layout_gravity="center"/>
+
+
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:layout_weight="1">
+
+    <ImageButton android:layout_height="81dp" android:layout_width="84dp" android:id="@+id/YangjaeStation" app:srcCompat="@drawable/icon4" android:layout_marginTop="1dp" android:layout_marginRight="54dp" android:scaleType="centerCrop"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="124.5dp" android:id="@+id/YangjaeStationtxt" android:text="양재역 Yangjae Station" android:textSize="14sp" android:textColor="#000000" android:lineSpacingExtra="3sp"/>
+
+    <ImageButton android:layout_height="81dp" android:layout_width="84dp" android:id="@+id/ATCenter" app:srcCompat="@drawable/icon4" android:layout_marginTop="113dp" android:layout_marginRight="54dp" android:scaleType="centerCrop"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ATCenterYangjaeFlowerMarkettxt" android:text="AT센터.양재꽃시장 AT Center. Yangjae Flower Market" android:textSize="14sp" android:textColor="#000000" android:lineSpacingExtra="3sp"/>
+
+    <ImageButton android:layout_height="81dp" android:layout_width="84dp" android:id="@+id/GuanHyunSa" app:srcCompat="@drawable/icon4" android:layout_marginTop="133dp" android:layout_marginRight="54dp" android:scaleType="centerCrop"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/GwanhyeonsaStationtxt" android:text="관현사입구 Gwanhyeonsa Station" android:textSize="14sp" android:textColor="#000000" android:lineSpacingExtra="3sp" android:gravity="center_horizontal" android:layout_marginRight="54dp"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <android.support.v7.widget.ContentFrameLayout android:layout_height="match_parent" android:layout_width="match_parent"> </android.support.v7.widget.ContentFrameLayout>
+
+</LinearLayout>
+
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>

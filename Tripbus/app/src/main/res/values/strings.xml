@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SeoulTrip</string>
+
+    <!--facebook-->
+    <string name="facebook_app_id">303267540464014</string>
+    <string name="fb_login_protocol_scheme">fb303267540464014</string>
+
+    <string name="name">Name</string>
+    <string name="tripbus">Tripbus</string>
+    <string name="todo">TODO</string>
+</resources>
